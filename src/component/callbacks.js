@@ -19,13 +19,13 @@ import './callbacks.css'
 
         change =(event)=>{
 
-                let nam = event.target.nam;
+                let nam = event.target.name;
                 let val= event.target.value;
 
                 //conditional rendeering
-                if(val=== age){
+                if(nam === "age"){
                     if(!Number(val)){
-                        alert("Age should be a number")
+                        alert("Age should be a number");
                     }
                 }
 
@@ -35,38 +35,10 @@ import './callbacks.css'
                 {[nam]: val }
             );
         }
+    
 
         // lnam =(event)=>{
-        //     this.setState(
-        //         {lname: event.target.value}
-        //     );
-        // }
-
-        // onam =(event)=>{
-        //     this.setState(
-        //         {age: event.target.value}
-        //     );
-        // }
-
-        // mes =(event)=>{
-        //     this.setState(
-        //         {mess: event.target.value}
-        //     );
-        // }
-
-
-        // clik=()=>{
-        //     document.getElementById("pr").innerHTML=this.state.name;
-        // }
-// var arr= [];
-
-//pushing items into array
-
-
-
-
-
-
+        
 
 render(){
     return(
@@ -79,7 +51,7 @@ render(){
             <p id="pr">{this.state.fname}</p>
             <form>
             <label>What's your First name?</label>
-            <input type="text" id="nam" placeholder="Owago" onChange={this.change} name="fname"/> 
+            <input type="text" id="nam" placeholder="Owago" onChange={this.change} name="fname" required/> 
         <br />
             <label>What's your Last name?</label>
             <input type="text" id="nam" placeholder="Ras" onChange={this.change} name="lname"/> 
