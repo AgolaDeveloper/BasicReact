@@ -19,8 +19,17 @@ import './callbacks.css'
 
         change =(event)=>{
 
-                let val = event.target.nam;
-                let nam= event.target.value;
+                let nam = event.target.nam;
+                let val= event.target.value;
+
+                //conditional rendeering
+                if(val=== age){
+                    if(!Number(val)){
+                        alert("Age should be a number")
+                    }
+                }
+
+                //setting values to state
             this.setState(
                 // {fname: event.target.value}
                 {[nam]: val }
