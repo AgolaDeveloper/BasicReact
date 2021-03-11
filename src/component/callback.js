@@ -2,7 +2,9 @@ import React from 'react'
 
 function Call(){
 
-
+function func(){
+    
+}
 
 
 }

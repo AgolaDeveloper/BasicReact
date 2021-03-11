@@ -1,57 +1,91 @@
 import { render } from '@testing-library/react';
-import React from 'react'
+import React, { Component } from 'react'
 import './callbacks.css'
 
-function Cal(){
+// function Cal(){
+    class Cal extends Component{
+        constructor(){
+            super()
+            this.state={
+                arr: [],
+                fname:"",
+                lname: "",
 
-var arr= [];
+                age:"",
+                mess:""
+
+            }
+        }
+
+        fnam =(event)=>{
+            this.setState(
+                {fname: event.target.value}
+            );
+        }
+
+        lnam =(event)=>{
+            this.setState(
+                {lname: event.target.value}
+            );
+        }
+
+        onam =(event)=>{
+            this.setState(
+                {age: event.target.value}
+            );
+        }
+
+        mes =(event)=>{
+            this.setState(
+                {mess: event.target.value}
+            );
+        }
+
+
+        // clik=()=>{
+        //     document.getElementById("pr").innerHTML=this.state.name;
+        // }
+// var arr= [];
 
 //pushing items into array
 
-// function 
-// pus=(e)=>{
-//     var item;
-//     item = document.getElementById("add").e.target.value;
-
-//     ............................
-//         // item.target.value;
-//     //    var im =e.target.value;
-//     // setTimeout(()=>{
-//         // var im;
-//         // item = document.getElementById("add");
-//         // im =item.target.value;
-//         ............................................
-//         arr.push(item)
-//     // }, 1000)
-// }
-
-// //displaying our array items
-
-// // function items()
-// items=()=>{
-//     var it ="";
-//     // setTimeout(()=>{
-//         arr.forEach((itm)=>{
-//              it =+ itm;
-//         })
-//     // }, 1000)
-
-//     document.getElementById("par").innerHTML= it
-//     // return it;
-
-//     // function chan(){
-//     //     var itms = document.getElementById("add").value.length;
-//     //     document.getElementById("cha").innerHTML="you've just entered "+itms;
-
-    
 
 
-render();{
+
+
+
+
+render(){
     return(
         <div id="di">
+            <p>First Name: {this.state.fname} <br />
+                Last Name:{this.state.lname} <br/>
+                Age: {this.state.age} <br/>
+                Comment {this.state.mess}
+            </p>
+            <p id="pr">{this.state.fname}</p>
+            <form>
+            <label>What's your First name?</label>
+            <input type="text" id="nam" placeholder="Owago" onChange={this.fnam}/> 
+        <br />
+            <label>What's your Last name?</label>
+            <input type="text" id="nam" placeholder="Ras" onChange={this.lnam}/> 
+            <br />
+            
+            <label>How old are you?</label>
+            <input type="number" id="old " placeholder="18" onChange={this.onam}/>
+            <br/>
+            <label>Comment:</label>
+            <textarea type="text" id="tm" placeholder="your comment goes here..." onChange={this.mes}></textarea>
+            {/* <button onChange={this.clik}>Sign Up</button> */}
+            <br />
+            <br />
+            <br />
+            
             <label>Enter Number:</label>
             <input id="add" ></input>
             <button >ADD INTO ARRAY</button>
+            </form>
 
             {/* onClick={pus} */}
 
