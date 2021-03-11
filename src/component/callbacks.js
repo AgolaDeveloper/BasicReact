@@ -18,9 +18,12 @@ import './callbacks.css'
         }
 
         change =(event)=>{
+
+                let val = event.target.nam;
+                let nam= event.target.value;
             this.setState(
                 // {fname: event.target.value}
-                {[event.target.name]: event.target.value}
+                {[nam]: val }
             );
         }
 
