@@ -17,29 +17,30 @@ import './callbacks.css'
             }
         }
 
-        fnam =(event)=>{
+        change =(event)=>{
             this.setState(
-                {fname: event.target.value}
+                // {fname: event.target.value}
+                {[event.target.name]: event.target.value}
             );
         }
 
-        lnam =(event)=>{
-            this.setState(
-                {lname: event.target.value}
-            );
-        }
+        // lnam =(event)=>{
+        //     this.setState(
+        //         {lname: event.target.value}
+        //     );
+        // }
 
-        onam =(event)=>{
-            this.setState(
-                {age: event.target.value}
-            );
-        }
+        // onam =(event)=>{
+        //     this.setState(
+        //         {age: event.target.value}
+        //     );
+        // }
 
-        mes =(event)=>{
-            this.setState(
-                {mess: event.target.value}
-            );
-        }
+        // mes =(event)=>{
+        //     this.setState(
+        //         {mess: event.target.value}
+        //     );
+        // }
 
 
         // clik=()=>{
@@ -66,17 +67,17 @@ render(){
             <p id="pr">{this.state.fname}</p>
             <form>
             <label>What's your First name?</label>
-            <input type="text" id="nam" placeholder="Owago" onChange={this.fnam}/> 
+            <input type="text" id="nam" placeholder="Owago" onChange={this.change} name="fname"/> 
         <br />
             <label>What's your Last name?</label>
-            <input type="text" id="nam" placeholder="Ras" onChange={this.lnam}/> 
+            <input type="text" id="nam" placeholder="Ras" onChange={this.change} name="lname"/> 
             <br />
             
             <label>How old are you?</label>
-            <input type="number" id="old " placeholder="18" onChange={this.onam}/>
+            <input type="number" id="old " placeholder="18" onChange={this.change} name="age"/>
             <br/>
             <label>Comment:</label>
-            <textarea type="text" id="tm" placeholder="your comment goes here..." onChange={this.mes}></textarea>
+            <textarea type="text" id="tm" placeholder="your comment goes here..." onChange={this.change} name="mess"></textarea>
             {/* <button onChange={this.clik}>Sign Up</button> */}
             <br />
             <br />
