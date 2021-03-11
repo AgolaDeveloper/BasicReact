@@ -82,9 +82,9 @@ render(){
             <br />
             <br />
             
-            <label>Enter Number:</label>
+            <label>Enter Any Number:</label>
             <input id="add" ></input>
-            <button >AD  TO ARRAY</button>
+            <button >ADD TO ARRAY</button>
             </form>
 
             {/* onClick={pus} */}
