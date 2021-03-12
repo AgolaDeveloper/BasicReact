@@ -2,7 +2,7 @@
 import './App.css';
 import Example from './component/Example';
 import Cal from './component/callbacks'
-import 
+import Nav from './component/nav.jsg'
 
 function App() {
   return (
