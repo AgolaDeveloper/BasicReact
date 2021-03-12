@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react'
 import React, { Component } from 'react'
-import './nav.js'
+import './nav.css'
 
 // class Nav extends Component{
 //     constructor(){
