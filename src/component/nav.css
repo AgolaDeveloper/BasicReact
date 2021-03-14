@@ -2,5 +2,5 @@
     height: 10vh;
     background-color: rgb(15, 2, 2);
     color: white;
-    text-justify: inter-cluster;
+    text-justify: center; 
 }
