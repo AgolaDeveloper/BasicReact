@@ -11,13 +11,14 @@ import './nav.css'
 // }
 
 function Nav(){
-    render(){
+
+    
         return(
             <div className="divs">
-
+                <p>Here we are, with our navigation bar</p>
             </div>
         )
-    }
+    
 }
 
 export default Nav;
