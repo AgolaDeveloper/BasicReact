@@ -8,7 +8,7 @@ function Foot() {
     return (
         <div id="footer-bg">
             <h3>this is our footer component</h3>
-            <p>epsum <br /> <code>break</code></p>
+            <p>epsum lisking testing <br /> <code>break</code></p>
         </div>
     )
 }
