@@ -16,7 +16,7 @@ function Foot() {
 function head(){
     return (
     <div >
-        <h2>Here is Our Example</h2>
+        <h2>Here is Our Example, it is our header level two</h2>
         <img src= {kenya} width="500px" alt="@kenyaImage" />
         <Foot/>
     </div>
